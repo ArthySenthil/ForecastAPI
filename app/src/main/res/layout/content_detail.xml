@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_detail" tools:context="com.senarita.forecastapi.DetailActivity"
+    android:contentDescription="@string/hilo">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/forecat_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_weight="6"
+            />
+        <TextView
+            android:id="@+id/iconDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textAllCaps="true"
+        />
+        <TextView
+            android:id="@+id/feelsLike"
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:textColor="@color/colorSecondaryText"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/summary"
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textColor="@color/colorSecondaryText"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+       >
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"
+            android:text="@string/label_detail2"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/timeText"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/temp_hilo"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/label_detail1"
+            android:textAppearance="?android:textAppearanceMedium"
+            />
+        <TextView
+            android:id="@+id/hiloText"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"
+        android:text="@string/label_detail3"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            android:id="@+id/visibleText"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"
+        android:text="@string/label_detail4"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            android:id="@+id/humidityText"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"
+        android:text="@string/label_detail6"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            android:id="@+id/sunriseText"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:textColor="@color/colorAccent"
+        android:text="@string/label_detail7"
+            android:textAppearance="?android:textAppearanceMedium"/>
+        <TextView
+            android:id="@+id/sunsetText"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
